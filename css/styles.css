@@ -171,6 +171,9 @@ gap: 40px;
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440рх;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .hero-title{
@@ -330,7 +333,7 @@ font-weight: 400;
     background-color:var(--mein-btn-color);
 }
 .team-soc-link:hover,
- team-soc-link:focus{
+ .team-soc-link:focus{
 background-color: var(--focus-btn-color);
 }
 
@@ -362,7 +365,8 @@ background-color: var(--focus-btn-color);
 }
 
 .customers-link {
-    border: 1px solid #8E8F99;
+    border: 1px solid currentColor;
+    color: #8E8F99;
     width: 100%;
     height: 100%;
     border-radius: 4px;
@@ -372,11 +376,11 @@ background-color: var(--focus-btn-color);
 }
 
 .customers-svg {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
 .customers-link:is(:hover, :focus) {
-    border-color: var(--focus-btn-color);
+  color: var(--focus-btn-color);
 }
 
 .customers-link:is(:hover, :focus) .customers-svg {
@@ -397,7 +401,7 @@ background-color: var(--focus-btn-color);
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
-        line-height: 1.16;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--mein-title-color);
         text-transform: uppercase;
@@ -422,10 +426,19 @@ background-color: var(--focus-btn-color);
 }
 
 .foot-container{
-  display: flex;
-  gap: 120px;
+    display: flex;
 }
 
+.foot-logo{
+ width: 264px;
+  
+}
+
+
+.footer-social{
+ margin-left: 120px;
+    width: 208px;
+}
 
 .footer-soc-text {
     font-weight: 500;
@@ -513,16 +526,21 @@ flex-wrap: wrap;
 gap: 48px 24px;
 }
 
-.portfolio-shadow:hover,
-.portfolio-shadow:focus
-{
- 
- box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-0px 1px 1px rgba(46, 47, 66, 0.16),
-0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .portfolio-item {
 }
+.portfolio-card-link{
+ display: block;
+ border: 1px solid #f4f4fd;       
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .portfolio-item-text{
     padding: 32px 16px 32px 16px ;
